@@ -5,7 +5,7 @@ int main()
     int num, flag = 0;
     printf("enter the last : ");
     scanf("%d", &num);
-    for(int i =1;i<num;i++)
+    for(int i =2;i<num;i++)
     {
         if(function(i)==0)
             printf("%d\t",i);

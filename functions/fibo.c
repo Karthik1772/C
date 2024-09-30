@@ -1,3 +1,4 @@
+//prints wheter a no is fibonaci no or not
 #include <stdio.h>
 #include <math.h>
 
@@ -26,5 +27,8 @@ int Square(int x)
 
 int Fibonacci(int n)
 {
-    return Square((5 * n * n) + 4) || Square((5 * n * n) - 4);
+    if (Square((5 * n * n) + 4) || Square((5 * n * n) - 4))
+        return 1;
+    else
+        return 0;
 }
