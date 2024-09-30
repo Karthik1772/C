@@ -1,3 +1,4 @@
+//gives the prime no till n no
 #include <stdio.h>
 int function(int n);
 int main()
