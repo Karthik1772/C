@@ -1,3 +1,4 @@
+//printd the perfect square till n no
 #include <stdio.h>
 int main()
 {

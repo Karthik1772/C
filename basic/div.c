@@ -9,6 +9,6 @@ int main()
         if(i%7==0)
             sum=sum+i;
     }
-    printf("sum of nyumber divisible by 7 is %d",sum);
+    printf("sum of number divisible by 7 is %d",sum);
     return 0 ;
 }
