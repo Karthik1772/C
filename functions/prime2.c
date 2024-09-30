@@ -1,8 +1,29 @@
-#include<stdio.h>
+#include <stdio.h>
+int function(int n);
 int main()
 {
-    int n;
-    printf("enter the last no ");
-    scanf("%d",&n);
-    
+    int num, flag = 0;
+    printf("enter the last : ");
+    scanf("%d", &num);
+    for(int i =1;i<num;i++)
+    {
+        if(function(i)==0)
+            printf("%d\t",i);
+    }
+}
+int function(int n)
+{
+    int a, flag = 0;
+    for (a = 2; (a * a) <= n; a++)
+    {
+        if (n % a == 0)
+        {
+            flag = 1;
+            break;
+        }
+    }
+    if (flag == 1)
+        return 1;
+    else
+        return 0;
 }
