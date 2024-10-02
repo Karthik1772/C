@@ -11,12 +11,13 @@ int main()
 int seieve(int x)
 {
     int prime[x + 1];
+    int super[x];
     int i, j;
     for (i = 0; i <= x; i++)
     {
         prime[i] = 1;
     }
-    for (i = 2; i <= x; i++)
+    for (i = 2; i*i <= x; i++)
     {
         if (prime[i] == 1)
         {

@@ -1,3 +1,4 @@
+//program to print no of elements in a no
 #include <stdio.h>
 int main()
 {
