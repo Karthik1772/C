@@ -1,4 +1,4 @@
-//prints wheter the given no is prime no or not
+// prints wheter the given no is prime no or not
 #include <stdio.h>
 void function(int n);
 int main()

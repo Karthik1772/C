@@ -1,4 +1,4 @@
-//this program the gives the fibonacci no upto n no
+// this program the gives the fibonacci no upto n no
 #include <stdio.h>
 int main()
 {

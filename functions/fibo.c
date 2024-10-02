@@ -1,4 +1,4 @@
-//prints wheter a no is fibonaci no or not
+// prints wheter a no is fibonaci no or not
 #include <stdio.h>
 #include <math.h>
 

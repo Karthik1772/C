@@ -1,4 +1,4 @@
-//gives the highest common factor between 2 numbers
+// gives the highest common factor between 2 numbers
 #include <stdio.h>
 int gcd(int a, int b);
 int main()

@@ -2,10 +2,10 @@
 #include <stdio.h>
 int main()
 {
-    int n, odd = 0, even = 0, i ;
+    int n, odd = 0, even = 0, i;
     printf("enter the last number ");
     scanf("%d", &n);
-    for (i = 0; i <=n; i++)
+    for (i = 0; i <= n; i++)
     {
         if (i % 2 == 0)
             even = even + i;

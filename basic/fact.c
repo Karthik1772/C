@@ -1,6 +1,6 @@
-//give the factorial of the number
+// give the factorial of the number
 #include <stdio.h>
-#define modulo 1000000007;//in order to controll over flow of int
+#define modulo 1000000007; // in order to controll over flow of int
 int main()
 {
     int n, i;
