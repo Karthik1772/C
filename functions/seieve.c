@@ -11,18 +11,27 @@ int main()
 int seieve(int x)
 {
     int prime[x + 1];
-    int arr[x];
     int i, j;
     for (i = 0; i <= x; i++)
-        prime[i] = 1;
-    for (i = 2; i * i < x; i++)
     {
-        for (j = i * i; j < x; j + i)
+        prime[i] = 1;
+    }
+    for (i = 2; i <= x; i++)
+    {
+        if (prime[i] == 1)
         {
-            prime[i] = 0;
+            for (j = i * i; j <= x; j = j + i)
+            {
+                prime[j] = 0;
+            }
         }
     }
     for (i = 2; i < x; i++)
-        printf("%d", prime[i]);
+    {
+        if (prime[i] == 1)
+        {
+            printf("%d\t", i);
+        }
+    }
     return 0;
 }
