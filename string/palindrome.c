@@ -21,30 +21,34 @@ int main()
             break;
         }
     }
-    if (flag==0)
+    if (flag == 0)
         printf("palindrome");
     else
         printf("not palindrome");
 }
 
-//check for a palindrome or not
-// #include<stdio.h>
-// int main(){
-//     char str[100],ch;
-//     int i,len=0,flag=0;
+// check for a palindrome or not
+// #include <stdio.h>
+// int main()
+// {
+//     char str[100], ch;
+//     int i, len = 0, flag = 0;
 //     printf("enter the string: ");
-//     scanf("%[^\n]s",str);
-//     for(i=0;str[i];i++);
-//     len=i;
-//     for(i=0;i<=(len/2);i++){
-//         if(str[i]!=str[len-i-1]){
-//             flag=1;
+//     scanf("%[^\n]s", str);
+//     for (i = 0; str[i]; i++)
+//         ;
+//     len = i;
+//     for (i = 0; i <= (len / 2); i++)
+//     {
+//         if (str[i] != str[len - i - 1])
+//         {
+//             flag = 1;
 //             break;
 //         }
 //     }
-//     if(flag)
+//     if (flag)
 //         printf("not a palindrome");
 //     else
 //         printf("palindrome");
-//     return 0;
+//         return 0;
 // }
