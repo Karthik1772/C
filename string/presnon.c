@@ -3,19 +3,22 @@
 int main()
 {
     char str[100];
-    char ch, flag = 0;
-    int i;
+    char ch;
+    int i, flag = 0;
     printf("enter the string : ");
-    scanf("%d", str);
-    while (getchar() != '\n');
+    scanf("%[^\n]s", str);
+    while (getchar() != '\n')
+        ;
     printf("enter the character : ");
-    scanf("%c",&ch);
-        for (i = 0; str[i]; i++)
+    scanf("%c", &ch);
+    for (i = 0; str[i]; i++)
+    {
+        if (ch == str[i])
         {
-            if (ch == str[i])
-                flag = 1;
-                break;
+            flag = 1;
+            break;
         }
+    }
     if (flag == 1)
         printf("present");
     else
