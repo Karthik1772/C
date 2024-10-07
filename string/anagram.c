@@ -10,8 +10,7 @@ int main()
     printf("enter the first string: ");
     scanf("%[^\n]s", s1);
 
-    while (getchar() != '\n')
-        ;
+    while (getchar() != '\n');
 
     printf("enter the second string: ");
     scanf("%[^\n]s", s2);
