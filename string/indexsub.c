@@ -3,7 +3,7 @@
 int main()
 {
     char s1[30], s2[30];
-    int i, j, len1 = 0, len2 = 0, flag;
+    int i, j, len1 = 0, len2 = 0, flag=0;
     printf("enter the string: ");
     scanf("%[^\n]s", s1);
 
