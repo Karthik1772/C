@@ -9,9 +9,9 @@ int main()
     while (getchar() != '\n');
     printf("enter the sub string : ");
     scanf("%[^\n]s", s2);
-    for (i = 0; s1[i]; i++);
+    for (i = 0; s1[i]; i++)
     len1 = i;
-    for (i = 0; s2[i]; i++);
+    for (i = 0; s2[i]; i++)
     len2 = i;
     for (i = 0; i < (len1 - len2); i++)
     {
