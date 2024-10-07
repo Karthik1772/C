@@ -32,6 +32,7 @@ int main()
         if (flag == 0)
             printf("\nsubstring: %d", i);
     }
-
+    if(flag == 1)
+        printf("not found");
     return 0;
 }
