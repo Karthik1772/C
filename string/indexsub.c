@@ -1,19 +1,24 @@
-// write a program to search substring in main string without builtin function
+// write a program to find the index of sub string in main string
 #include <stdio.h>
 int main()
 {
-    char s1[100], s2[100];
-    int len1 = 0, len2 = 0, i, j, flag = 0;
-    printf("enter the main string : ");
+    char s1[30], s2[30];
+    int i, j, len1 = 0, len2 = 0, flag;
+    printf("enter the string: ");
     scanf("%[^\n]s", s1);
+
     while (getchar() != '\n');
-    printf("enter the sub string : ");
+
+    printf("enter the sub-string: ");
     scanf("%[^\n]s", s2);
+
     for (i = 0; s1[i]; i++);
     len1 = i;
+
     for (i = 0; s2[i]; i++);
     len2 = i;
-    for (i = 0; i < (len1 - len2); i++)
+
+    for (i = 0; i <= (len1 - len2); i++)
     {
         for (j = i; j < (i + len2); j++)
         {
@@ -25,10 +30,8 @@ int main()
             }
         }
         if (flag == 0)
-            break;
+            printf("\nsubstring: %d", i);
     }
-    if (flag == 1)
-        printf("found");
-    else
-        printf("not found");
+
+    return 0;
 }
