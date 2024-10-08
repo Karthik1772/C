@@ -13,6 +13,7 @@ int main()
     char s1[100];
     printf("Enter the string  : ");
     scanf("%s",s1);
+    printf("the reverse sting is : ");
     reverse(s1);
 
     return 0;
