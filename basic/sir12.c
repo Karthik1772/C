@@ -2,18 +2,24 @@
 #include <stdio.h>
 int main()
 {
-    int n, i, j, count;
+    int n, i, count;
     printf("Enter the number:");
     scanf("%d", &n);
-    for (j = 2; j <= i / 2; j++)
+    count = 0;
+    for (i = 2; i <= n / 2; i++)
     {
-        if (i % j == 0)
+        if (n % i == 0)
         {
-            count++;
+            count = 1;
         }
     }
     if (count == 0)
     {
-        printf("%d\t", i);
+
+        printf("The number is prime");
+    }
+    else
+    {
+        printf("The number is not prime");
     }
 }
